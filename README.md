@@ -14,7 +14,9 @@ Along the way there were a few issues and small issues which I want to highlight
 - If you have errors finding xorriso when running grub-mkrescue, install the following
 
 `sudo apt-get install libisoburn1`
+
 `sudo apt-get install xorriso`
+
 - To run qemu to test the OS you just built, install it first
 `sudo apt install qemu-system-x86`
 - When running qemu to boot the ISO file, note that if you are running in a SSH prompt without GTK or any display, you need to turn it off by doing the following
@@ -38,9 +40,13 @@ You should really read the full instructions available at https://wiki.osdev.org
 
 - Create the ISO image
 `mkdir -p isodir/boot/grub`
+
 `cp myos.bin isodir/boot/mados.bin`
+
 `cp grub.cfg isodir/boot/grub/grub.cfg`
+
 `grub-mkrescue -o mados.iso isodir`
+
 
 - Start the ISO image in QEMU (no GTK display)
 
