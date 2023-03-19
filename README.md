@@ -39,9 +39,10 @@ You should really read the full instructions available at https://wiki.osdev.org
 `i686-elf-gcc -T linker.ld -o mados.bin -ffreestanding -O2 -nostdlib boot.o kernel.o -lgcc`
 
 - Create the ISO image
+
 `mkdir -p isodir/boot/grub`
 
-`cp myos.bin isodir/boot/mados.bin`
+`cp mad.bin isodir/boot/mados.bin`
 
 `cp grub.cfg isodir/boot/grub/grub.cfg`
 
